@@ -17,7 +17,7 @@ projRef.once('value', function(snapshot){
         content+= '<td><em>' + myKey + '</em></td>'
         content+= '<td></td>'
         content+= '<td></td>'
-        content+= '<td>' + compDate + '</td>'
+        content+= `<td><input type="date" value=${compDate}>` + '</td>'
         content+= '<td>' + comp + '</td>'
         document.getElementById('mainBody').innerHTML += content
         content = '<tr>'
