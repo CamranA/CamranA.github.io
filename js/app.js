@@ -18,13 +18,24 @@ projRef.once('value', function(snapshot){
         content+= '<td></td>'
         content+= '<td></td>'
         content+= `<td><input type="date" value=${compDate}>` + '</td>'
-        content+= '<td>' + comp + '</td>'
+        if (comp === 'y') {
+            content+= '<td><select><option value="y" selected>y</option><option value="n">n</option></td>'
+        }
+        else {
+            content+= '<td><select><option value="y">y</option><option value="n" selected>n</option></td>'
+        }
+        
         document.getElementById('mainBody').innerHTML += content
         content = '<tr>'
         for (const [key, value] of Object.entries(items)) {
             content+= '<td></td>'
             content+= '<td>' + key + '</td>'
-            content+= '<td>' + value + '</td>'
+            if (value === 'y') {
+                content+= '<td><select><option value="y" selected>y</option><option value="n">n</option></td>'
+            }
+            else {
+                content+= '<td><select><option value="y">y</option><option value="n" selected>n</option></td>'
+            }
             content+= '<td></td>'
             content+= '<td></td>'
         }
