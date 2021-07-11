@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>House Projects</title>
-    <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/skeleton.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <h1>House Projects</h1>
-                <table class="u-full-width">
-                    <thead>
-                        <tr>
-                            <th>Project</th>
-                            <th>Item</th>
-                            <th>Aquired</th>
-                            <th>Projected Completion</th>
-                            <th>Done</th>
-                        </tr>
-                    </thead>
-                    <tbody id="mainBody">
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <h1 class="title">House Projects</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Project</th>
+                                <th>Item</th>
+                                <th>Aquired</th>
+                                <th>Projected Completion</th>
+                                <th>Done</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mainBody">
 
-                    </tbody>
-                </table>
-                
+                        </tbody>
+                    </table>
+                    
+            </div>
         </div>
-        </div>
+    </section>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
     <script>

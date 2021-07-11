@@ -14,7 +14,7 @@ projRef.once('value', function(snapshot){
         console.log(compDate)
         console.log(myKey)
         
-        content+= '<td><strong>' + myKey + '</strong></td>'
+        content+= '<td><em>' + myKey + '</em></td>'
         content+= '<td></td>'
         content+= '<td></td>'
         content+= '<td>' + compDate + '</td>'
