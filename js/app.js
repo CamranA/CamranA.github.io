@@ -19,10 +19,10 @@ projRef.once('value', function(snapshot){
         content+= '<td></td>'
         content+= `<td><input type="date" value=${compDate}>` + '</td>'
         if (comp === 'y') {
-            content+= '<td><select><option value="y" selected>y</option><option value="n">n</option></td>'
+            content+= `<td><select id="comp${myKey}"><option value="y" selected>y</option><option value="n">n</option></td>`
         }
         else {
-            content+= '<td><select><option value="y">y</option><option value="n" selected>n</option></td>'
+            content+= `<td><select id="comp${myKey}"><option value="y">y</option><option value="n" selected>n</option></td>`
         }
         
         document.getElementById('mainBody').innerHTML += content
@@ -31,10 +31,10 @@ projRef.once('value', function(snapshot){
             content+= '<td></td>'
             content+= '<td>' + key + '</td>'
             if (value === 'y') {
-                content+= '<td><select><option value="y" selected>y</option><option value="n">n</option></td>'
+                content+= `<td><select id="aquire${key}"><option value="y" selected>y</option><option value="n">n</option></td>`
             }
             else {
-                content+= '<td><select><option value="y">y</option><option value="n" selected>n</option></td>'
+                content+= `<td><select id="aquire${key}"><option value="y">y</option><option value="n" selected>n</option></td>`
             }
             content+= '<td></td>'
             content+= '<td></td>'
