@@ -12,14 +12,43 @@
     <div class="container">
         <div class="row">
             <h1>House Projects</h1>
-                <p>
-                    <ul>
-                        <li>Drywall Tape</li>
-                        <li>Shrink Free Spackle</li>
-                        <li>Putty Knife</li>
-                    </ul>
-                </p>
+                <table class="u-full-width">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Item</th>
+                            <th>Aquired</th>
+                            <th>Projected Completion</th>
+                            <th>Done</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mainBody">
+
+                    </tbody>
+                </table>
+                <ul id="mainList">
+                    <li>Drywall Tape</li>
+                    <li>Shrink Free Spackle</li>
+                    <li>Putty Knife</li>
+                </ul>
+                
         </div>
         </div>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCbV18jQosRXAE9wO_j2nKmqIF5gv39ldU",
+          authDomain: "houseprojects-be9f0.firebaseapp.com",
+          projectId: "houseprojects-be9f0",
+          storageBucket: "houseprojects-be9f0.appspot.com",
+          messagingSenderId: "232462388568",
+          appId: "1:232462388568:web:4cd6464c226eb64f98a92d"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
