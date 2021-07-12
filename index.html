@@ -14,12 +14,14 @@
     <section class="section">
         <div class="container">
             <div class="columns is-centered">
+                
                 <h1 class="title">House Projects</h1>
             </div>
             <br>
             <div class="columns is-centered">
+                <div class="column is-half">
                 
-                <table class="table is-narrow is-hoverable">
+                <table class="table is-fullwidth is-hoverable">
                     <thead>
                         <tr>
                             <th>Project</th>
@@ -34,11 +36,19 @@
                     </tbody>
                 </table>
             
+                </div>
+                
             </div>
+            <div class="columns is-centered">
+                <div class="column is-half">
+            <button class="button is-danger">delete</button>
+            <button class="button is-primary">add</button>
+            </div></div>
         </div>
     </section>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {

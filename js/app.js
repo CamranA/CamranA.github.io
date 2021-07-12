@@ -3,6 +3,7 @@ const projRef = dbRef.child('project')
 
 
 projRef.once('value', function(snapshot){
+  
     snapshot.forEach(function(data) {
         let content = ''
         let comp = data.val().comp
@@ -47,8 +48,6 @@ projRef.once('value', function(snapshot){
 
     })
 })
-
-
 
 
 /* write ex
